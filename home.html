@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harish- Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+header .header-content h1 {
+    margin: 0;
+    font-size: 2.2em;
+}
+
+header .header-content p {
+    margin: 3px 0 0;
+}
+
+.section {
+    padding: 40px 0;
+}
+
+.bg-light {
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.8em;
+}
+
+.intro {
+    text-align: center;
+    padding: 80px 0;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.intro .container {
+    max-width: 700px;
+}
+
+.content img {
+    max-width: 150px;
+    border-radius: 50%;
+    margin-right: 15px;
+    float: left;
+}
+
+.projects-grid, .skills-grid, .timeline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project, .skill, .timeline-item {
+    background-color: white;
+    padding: 15px;
+    margin: 8px 0;
+    border-radius: 5px;
+    flex: 1;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 8px;
+    color: #2f5d60;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.skill i {
+    display: block;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #333;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .content img {
+        display: block;
+        float: none;
+        margin: 0 auto 15px;
+    }
+    .projects-grid, .skills-grid, .timeline {
+        flex-direction: column;
+    }
+    header nav ul li {
+        display: block;
+        margin: 8px 0;
+    }
+}
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <br>
+        <br>
+        <div class="header-content">
+            <h1>Battula Harish</h1>
+            <p>Web Developer | Programmer</p>
+        </div>
+    </header>
+  <section id="home" class="intro">
+        <div class="container">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Explore my work, skills, and experience.</p>
+        </div>
+    </section>
+
+    <section id="about" class="section bg-light">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="content">
+                <img src="" alt="">
+                <p>I am an enthusiastic computer science student at Anil Neerukonda Institute of Technology and Science, specializing in web development and software engineering. I love learning new technologies and applying them to solve real-world problems.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project">
+                    
+                    <h3>Bus Management System</h3>
+                    <p>A bus management system allows passengers to register and book tickets for bus journeys. After registration, passengers can log in to browse available routes and schedules, select their desired journey, and book tickets online. They receive a confirmation of their reservation and can manage their bookings by modifying or cancelling them as needed, providing a seamless and convenient booking experience.</p>
+
+                    <a href="https://github.com/BattulaHarish/Bus-Booking-System.git">View Project</a>
+                </div>
+
+                <!-- Add more projects as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section bg-light">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <i class="fab fa-html5 fa-3x"></i>
+                    <p>HTML5</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-css3-alt fa-3x"></i>
+                    <p>CSS3</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-python fa-3x"></i>
+                    <p>Python</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-flask fa-3x"></i>
+                    <p>Flask</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-django fa-3x"></i>
+                    <p>Django</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+    <section id="education" class="section bg-light">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Pursuing B.Tech at Anil Neerukonda Institute of Technology and Science</h3>
+                    <p>2021-Present</p>
+                    <h3>Intermediate at sasi junior coolege</h3>
+                    <p>2019-2021</p>
+                    
+                </div>
+                <!-- Add more education entries as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:battulaharish.ds.email@example.com">battulaharish.ds@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/battula-harish-441671259" target="_blank">battula-harish-441671259</a></p>
+            <!-- Optional: Add a contact form here -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Battula Harish</p>
+    </footer>
+</body>
+</html>
